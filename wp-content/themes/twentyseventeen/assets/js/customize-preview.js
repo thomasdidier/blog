@@ -1,4 +1,3 @@
-
 /**
  * File customize-preview.js.
  *

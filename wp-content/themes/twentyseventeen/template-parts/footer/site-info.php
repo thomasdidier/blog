@@ -18,10 +18,4 @@
 	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyseventeen' ) ); ?>" class="imprint">
 		<?php printf( __( 'Proudly powered by %s', 'twentyseventeen' ), 'WordPress' ); ?>
 	</a>
-	<ul class="ion-icon">
-		<li><a href="#"><ion-icon class="icon" name="logo-github"></ion-icon></a></li>
-		<li><a href="#"><ion-icon class="icon" name="logo-twitter"></ion-icon></a></li>
-		<li><a href="#"><ion-icon class="icon" name="logo-facebook"></ion-icon></a></li>
-		<li><a href="#"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a></li>
-	</ul>
 </div><!-- .site-info -->

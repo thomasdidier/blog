@@ -199,7 +199,7 @@
 
 			$menuScrollDown.click( function( e ) {
 				e.preventDefault();
-				$( window ).scrollTo( '#123', {
+				$( window ).scrollTo( '#primary', {
 					duration: 600,
 					offset: { top: menuTop - navigationOuterHeight }
 				});

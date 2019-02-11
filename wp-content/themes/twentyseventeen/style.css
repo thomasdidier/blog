@@ -4,7 +4,7 @@ Theme URI: https://wordpress.org/themes/twentyseventeen/
 Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
-Version: 1.6
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: twentyseventeen
@@ -982,6 +982,11 @@ select {
 	max-width: 100%;
 }
 
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	outline: thin dotted #333;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
 	margin-right: 0.5em;
@@ -1222,7 +1227,60 @@ a .nav-title,
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
 
-
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.comment-content a:focus,
+.comment-content a:hover,
+.widget a:focus,
+.widget a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover {
+	color: #000;
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+}
 
 /* Fixes linked images */
 .entry-content a img,
@@ -4271,329 +4329,4 @@ p > object:only-child {
 	.site-footer {
 		padding: 0;
 	}
-}
-/********************			custom css 			********************/			
-.wp-custom-header{
-	background-image: url(assets/images/head.jpg);
-	height: 100%;
-	background-size: 100% 100%;
-	background-attachment: fixed;
-}
-
-.custom-header-media{
-	height: 860px;
-}
-.custom-header{
-	height:860px;
-}
-.site-description{
-	display:none;
-}
-
-.site-title{
-	margin-top: 150px;
-}
-
-.widget-area{
-	max-width: 400px;
-}
-
-
-.widget_meta{
-	display:none;
-} 
-
-.meta-2{
-	display:none;
-}
-
-#top-menu{
-	background-color: #fff !important;
-}
-#top-menu a{
-	padding:0px;
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-
-}
-.main-navigation{
-	position: fixed;
-	top: 0px;
-	z-index: 9999;
-	  width: 100%;
-}
-.page-title{
-	text-align: center;
-	font-size: 24px;
-	padding-bottom: 20px;
-	padding-top: 20px !important;
-	background-color: #fff;
-	margin-left: -500px;
-	margin-right: -500px;
-}
-.site-content{
-	padding-top: 0px;
-}
-
-.site-content-contain{
-	background-image: url(assets/images/123.jpg) !important;
-	background-size: 100% 100%;
-	background-attachment: fixed;
-	}
-.site-footer{
-	background-color: #fff;
-}
-
-.deux{
-	display: block !important;
-	background-color: rgba(255,255,255,0.4);
-	padding-bottom: 0px !important;
-	text-align: center;
-	margin-left: -150px ;
-	margin-right: 25px;
-	max-width: 300px !important; 
-}
-
-.un{
-	padding-bottom: 0px !important;
-	text-align: center;
-	margin-right: -150px;
-	margin-left: 575px;
-	max-width: 750px;
-}
-.cinq{
-	background-color: rgba(255,255,255, 0.4);
-	margin-top: 50px;
-
-}
-.published{
-	color: #718093;
-	text-shadow: 1px 1px #000;
-}
-.published:hover{
-	color: #000;
-
-}
-
-.trois{
-	background-color: #fff;
-	text-align: center;
-	margin-left: -800px !important;
-	margin-right: -800px !important;
-	height: 82px;
-
-
-}
-.entry-date{
-	position: absolute;
-	top: 5px;
-	margin-left: -55px;
-	margin-bottom: -24px;
-
-}
-.entry-meta{
-	padding-bottom: 0px !important;
-}
-
-#secondary{
-	display: none;
-}
-
-.entry-content{
-	background-color: rgba(255,255,255,0.4);
-}
-.content-area{
-	margin-left: 50px;
-	width: 750px !important;
-}
-.entry-title{
-
-	text-align: center;
-	background-color: rgba(255,255,255.0.0);
-}
-
-
-#comments{
-	background-color: rgba(255,255,255,0.4);
-}
-
-#respond{
-	max-width: 700px !important;
-	margin-left: 25px;
-}
-.entry-content p{
-	margin-top: 20px;
-	max-width: 700px !important;
-	margin-left: 25px;
-	text-align: center;
-}
-.imprint{
-	display: none;
-}
-.ion-icon li{
-	display: inline-block;
-	list-style: none !important;
-	margin-left: 300px;
-	margin-right: -300px;
-}
-
-
-.icon{
-	width: 50px;
-	height: 50px;
-	margin-left: 14px;
-	transition:1s;
-	
-}
-.icon:hover{
-	transition: 1s;
-	color: #000;
-}
-.widget a:hover{
-	text-shadow: 5px 0px 30px rgba(0, 0, 0, 1);
-	transition: 1s;
-}
-.entry-meta a:hover{
-	text-shadow: 5px 0px 30px rgba(0, 0, 0, 1);
-	transition: 1s;
-}
-
-body{
-	overflow-x : hidden;
-}
-
-@media only screen and (max-width: 767px) {
-	.un{
-		margin-left: 0px !important;
-		margin-right: 0px !important ;
-	}
-	.deux{
-		
-		margin-right: 20px  !important;
-		margin-left: 25px !important;
-		
-	}
-} 
-
-
-
-
-/* Tablet 12" max 1200px */
-@media only screen and (max-width: 1200px) {
-.deux{
-	display: block !important;
-	background-color: rgba(255,255,255,0.4);
-	padding-bottom: 0px !important;
-	text-align: center;
-	margin-left: -150px;
-	margin-right: 25px;
-	max-width: 500px !important; 
-}
-
-.un{
-	padding-bottom: 0px !important;
-	text-align: center;
-	margin-right: 20px !important;
-	margin-left: 25px!important;
-
-}
-.entry-title{
-	text-align: center;
-	background-color: #fff;
-
-}
-.trois{
-	background-color: #fff;
-	text-align: center;
-	margin-left: -98px;
-	margin-right: -95px;
-
-}
-} 
-@media only screen and (max-width: 1600px) {
-	.un{
-		margin-left: 250px;
-	}
-}
-
-nav{
-	background-color: #fff;
-}
-.six{
-	text-align: center;
-	margin-top: -25px;
-	background-color: #fff;
-	border: 1px solid #000;
-	margin-left: -1px;
-	margin-right: -1px;
-	
-}
-
-.six:hover{
-	text-shadow: 5px 0px 30px rgba(0, 0, 0, 1);
-}
-
-.entry-summary{
-	background-color: rgba(255,255,255,0.4);
-	text-align: center;
-}
-.menu-scroll-down{
-	z-index: 9999;
-}
-
-.quatre{
-	padding-top: 20px !important;
-	padding-bottom: 20px;
-	background-color: rgba(255,255,255,0.0);
-}
-
-.entry-title{
-	background-color: #fff;
-
-}
-.entry-header{
-	background-color: #fff;
-}
-.nav-subtitle{
-	margin-right: 25px;
-	margin-left: 25px;
-}
-
-.nav-title{
-	margin-right: 25px;
-	margin-left: 25px;
-}
-.icon-arrow-right{
-	margin-left: 39px;
-	color: rgba( 255,255,255, 0.4);
-	transition: 1s;
-}
-.icon-arrow-left{
-	color: rgba( 255,255,255, 0.4);
-	margin-left: -90px;
-	transition: 1s;
-}
-
-.icon-arrow-left:hover{
-	transition: 1s;
-	color: #fff !important;
-}
-
-.icon-arrow-right:hover{
-	transition: 1s;
-	color: #fff !important;
-}
-#sept h1{
-	margin-right: -800px;
-	margin-left: -800px;
-}
-.entry-header{
-	background-color: rgba(255,255,255, 0);
-}
-.post-edit-link{
-	background-color: #fff;
-padding-left: 358px;
-padding-right: 357px;
-margin-left: 0px !important
 }
